@@ -80,6 +80,11 @@ header .right-nav .search {
         max-width: 150px;
     }
 }
+@media(max-width:767px) {
+    header .right-nav .search {
+        max-width: 80px;
+    }
+}
 
 header .right-nav .search input {
     width: 100%;
@@ -126,6 +131,12 @@ header .right-nav .profile img {
     display: flex;
     justify-content: space-between;
     padding: 13px 5%;
+}
+@media(max-width:767px){
+    .container{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 }
 
 .container .left-content,
@@ -311,6 +322,7 @@ header .right-nav .profile img {
 @media(max-width:991px) {
     .container .main-content {
         max-width: 100%;
+        flex: 1;
     }
 }
 
@@ -414,7 +426,11 @@ header .right-nav .profile img {
     display: flex;
     align-items: center;
 }
-
+@media(max-width:767px){
+    .container .main-content .post .post-head {
+       margin-bottom: 20px;
+    }
+}
 .container .main-content .post .post-head img,
 .post-info img:first-child {
     width: 45px;
@@ -444,7 +460,11 @@ header .right-nav .profile img {
 .container .main-content .post .text-box {
     padding-left: 55px;
 }
-
+@media(max-width:767px){
+    .container .main-content .post .text-box {
+        padding: 0;
+    }
+}
 .container .main-content .post .text-box textarea {
     width: 100%;
     border: 0;
@@ -466,6 +486,11 @@ header .right-nav .profile img {
     align-items: center;
     font-size: 13px;
     cursor: pointer;
+}
+@media(max-width:767px){
+    .container .main-content .post .text-box ul li span{
+        font-size: 10px;
+    }
 }
 
 .container .main-content .post .text-box ul li img {
